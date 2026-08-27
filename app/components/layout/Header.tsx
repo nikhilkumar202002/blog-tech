@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ease-out ${
+      className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ease-out ${
         isSolid
           ? "bg-white/95 backdrop-blur-md"
           : "bg-transparent"

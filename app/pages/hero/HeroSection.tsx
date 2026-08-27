@@ -7,16 +7,14 @@ import texture from "../../assets/background/brown-texture.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-[#F6F6F6] py-14 sm:py-16 lg:py-20">
-    
-
-      <div className="relative mx-auto max-w-[1300px] px-5 sm:px-8 lg:px-10">
+    <section className="relative overflow-hidden bg-[#F6F6F6] lg:h-[1020px]">
+      <div className="container relative flex h-full flex-col pb-8 pt-[150px] lg:pb-0 lg:pt-[130px]">
         <div className="mx-auto flex max-w-[980px] flex-col items-center text-center">
           <p className="bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]">
             Technology built around the jewellery business
           </p>
 
-          <h1 className=" max-w-[980px] text-[45px] font-medium leading-[1.01] tracking-[-0.06em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]">
+          <h1 className="max-w-[980px] text-[45px] font-medium leading-[1.01] tracking-[-0.06em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]">
             Run Your Jewellery Business Smarter.
             <span className="block">From One Connected Platform.</span>
           </h1>
@@ -48,32 +46,32 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-[minmax(0,1.7fr)_minmax(340px,0.95fr)]">
-          <div
-            className="relative overflow-hidden rounded-[50px]  bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
-            style={{ backgroundImage: `url(${texture.src})` }}
-          >
-            <div className="overflow-hidden">
+        <div className="mt-12 flex flex-1 items-end">
+          <div className="grid w-full gap-6 lg:grid-cols-[7fr_3fr] lg:items-end">
+            <div
+              className="relative h-[340px] overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
+              style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
+            >
               <Image
                 src={desktopShot}
                 alt="Desktop dashboard preview for the jewellery ERP platform"
-                className="h-auto w-full"
+                fill
+                className="object-cover object-top pt-[20px] px-[20px]"
                 priority
                 sizes="(max-width: 1024px) 100vw, 68vw"
               />
             </div>
-          </div>
 
-          <div className="flex items-stretch">
-            <div
-              className="relative flex w-full items-center justify-center overflow-hidden rounded-[50px]  bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
-              style={{ backgroundImage: `url(${texture.src})` }}
-            >
-              <div className="flex w-full items-center justify-center overflow-hidden ">
+            <div className="flex items-stretch">
+              <div
+                className="relative h-[340px] w-full overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
+                style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
+              >
                 <Image
                   src={mobileShot}
                   alt="Mobile sales report preview for the jewellery ERP platform"
-                  className="h-auto w-full "
+                  fill
+                  className="object-cover object-top pt-[20px] px-[20px]"
                   priority
                   sizes="(max-width: 1024px) 100vw, 28vw"
                 />
