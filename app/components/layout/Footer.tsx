@@ -30,7 +30,7 @@ const footerColumns = [
 const Footer = () => {
   return (
     <footer className="w-full bg-[#050505] text-white">
-      <div className="container py-12 lg:py-16">
+      <div className="container pt-12 pb-[20px] lg:pb-[20px] lg:pt-16">
         <div className="grid gap-12 lg:grid-cols-[1.25fr_0.9fr_0.9fr_0.9fr_0.9fr] lg:gap-10">
           <div className="max-w-[320px]">
             <Link href="/" className="inline-flex items-center">
@@ -42,10 +42,8 @@ const Footer = () => {
               />
             </Link>
 
-            <p className="mt-6 max-w-[250px] text-[18px] leading-7 text-white/90">
-              Powering smarter jewellery businesses
-              <br />
-              with connected ERP technology.
+            <p className="mt-6 max-w-[250px] text-[16px] leading-5 text-white/90">
+              Powering smarter jewellery businesses with connected ERP technology.
             </p>
           </div>
 
@@ -91,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 text-[15px] text-white/85 lg:mt-12 lg:flex-row lg:items-center lg:justify-between">
+        <div className="mt-[20px] flex flex-col gap-4 text-[15px] text-white/85 lg:mt-[20px] lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p>&copy; 2026 Blogtec. All Rights Reserved.</p>
           </div>
