@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../../assets/MAIN-LOGO.png";
 
@@ -17,9 +17,37 @@ const navItems = [
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const isAtTop = currentScrollY < 8;
+      const isScrollingDown = currentScrollY > lastScrollY.current;
+
+      setIsScrolled(currentScrollY > 8);
+      setIsHidden(!isAtTop && isScrollingDown && !isOpen);
+      lastScrollY.current = currentScrollY;
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isOpen]);
+
+  const isSolid = isScrolled || isOpen;
 
   return (
-    <header className="relative w-full bg-white">
+    <header
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ease-out ${
+        isSolid
+          ? "bg-white/95 backdrop-blur-md"
+          : "bg-transparent"
+      } ${isHidden ? "-translate-y-full opacity-0 pointer-events-none" : "translate-y-0 opacity-100"}`}
+    >
       <div className="container">
         <div className="flex items-center justify-between gap-4 py-4 lg:py-5">
           <Link href="/" className="inline-flex items-center">

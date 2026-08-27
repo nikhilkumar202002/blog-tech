@@ -50,7 +50,7 @@ const HeroSection = () => {
 
         <div className="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-[minmax(0,1.7fr)_minmax(340px,0.95fr)]">
           <div
-            className="relative overflow-hidden rounded-[50px] border border-[#d1863a]/45 bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
+            className="relative overflow-hidden rounded-[50px]  bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
             style={{ backgroundImage: `url(${texture.src})` }}
           >
             <div className="overflow-hidden">
@@ -66,7 +66,7 @@ const HeroSection = () => {
 
           <div className="flex items-stretch">
             <div
-              className="relative flex w-full items-center justify-center overflow-hidden rounded-[50px] border border-[#d1863a]/45 bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
+              className="relative flex w-full items-center justify-center overflow-hidden rounded-[50px]  bg-cover bg-center p-4 shadow-[0_32px_90px_rgba(101,53,8,0.18)] sm:p-5 lg:p-6"
               style={{ backgroundImage: `url(${texture.src})` }}
             >
               <div className="flex w-full items-center justify-center overflow-hidden ">
