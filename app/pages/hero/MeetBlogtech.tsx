@@ -33,10 +33,10 @@ const MeetBlogtech = () => {
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-8 xl:gap-12">
           <div className="relative">
-            <div className="absolute -left-10 top-10 h-44 w-44 rounded-full bg-[#E8A65A]/20 blur-3xl sm:-left-6 sm:top-6" />
-            <div className="absolute -bottom-8 left-1/3 h-40 w-40 rounded-full bg-[#1C2D53]/8 blur-3xl" />
+            <div className="absolute -left-10 top-10 h-44 w-44 rounded-full bg-[#E8A65A]/20 blur-3xl sm:-left-24 sm:top-6" />
+            <div className="absolute -bottom-8 left-1/2 h-40 w-40 rounded-full bg-[#1C2D53]/8 blur-3xl" />
 
-            <div className="relative mx-auto max-w-[760px] lg:mx-0 lg:max-w-none lg:-translate-x-[6%] xl:-translate-x-[10%]">
+            <div className="relative mx-auto max-w-[760px] lg:mx-0 lg:max-w-none lg:-translate-x-[10%] xl:-translate-x-[10%]">
               <div className="relative aspect-[1.28/1] w-full">
                 <Image
                   src={heroDevices}
@@ -50,16 +50,16 @@ const MeetBlogtech = () => {
             </div>
           </div>
 
-          <div className="max-w-[560px] lg:ml-auto lg:pt-8">
-            <p className="bg-gradient-to-r from-[#A44C03] via-[#C96A11] to-[#D39504] bg-clip-text text-[14px] font-medium tracking-[0.04em] text-transparent sm:text-[16px]">
+          <div className="w-full lg:ml-auto lg:pt-8">
+            <p className="bg-gradient-to-r from-[#A44C03] via-[#C96A11] to-[#D39504] bg-clip-text text-[14px] font-medium tracking-[0.04em] text-transparent sm:text-[16px] uppercase">
               Meet Blogtec ERP
             </p>
 
-            <h2 className="mt-2 max-w-[470px] text-[34px] font-semibold leading-[1.02] tracking-[-0.06em] text-[#111111] sm:text-[44px] lg:text-[48px]">
+            <h2 className="mt-1 max-w-none text-[34px] font-semibold leading-[1.02] tracking-[-0.06em] text-[#111111] sm:text-[44px] lg:text-[48px]">
               Everything Your Jewellery Business Needs. Connected.
             </h2>
 
-            <p className="mt-5 max-w-[520px] text-[15px] leading-7 text-[#4D4D4D] sm:text-[16px]">
+            <p className="mt-5 max-w-none text-[15px] leading-7 text-[#4D4D4D] sm:text-[16px]">
               Blogtec is a jewellery-focused ERP platform designed to bring your
               daily operations, people and data into one connected ecosystem.
               Instead of switching between disconnected systems, your team gets
