@@ -24,7 +24,7 @@ const clientLogos: ClientLogo[] = [
 
 const ClientLogoSlider = () => {
   return (
-    <section className=" bg-white pt-10 sm:pt-12">
+    <section className=" bg-white pt-15 sm:pt-24">
       <div className="container">
         <div className="mx-auto max-w-[1040px] text-center">
           <h2 className="text-[14px] font-medium leading-tight tracking-[-0.03em] text-[#787878] sm:text-[16px] lg:text-[17px]">

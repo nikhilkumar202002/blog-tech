@@ -8,13 +8,13 @@ import texture from "../../assets/background/brown-texture.jpg";
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-[#F6F6F6] lg:h-[1020px]">
-      <div className="container relative flex h-full flex-col pb-8 pt-[150px] lg:pb-0 lg:pt-[130px]">
+      <div className="container relative flex h-full flex-col pb-8 pt-[150px] lg:pb-0 lg:pt-[200px]">
         <div className="mx-auto flex max-w-[980px] flex-col items-center text-center">
           <p className="bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]">
             Technology built around the jewellery business
           </p>
 
-          <h1 className="max-w-[980px] text-[45px] font-medium leading-[1.01] tracking-[-0.06em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]">
+          <h1 className="max-w-[980px] text-[45px] font-semibold leading-[1.2] tracking-[-0.04em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]">
             Run Your Jewellery Business Smarter.
             <span className="block">From One Connected Platform.</span>
           </h1>
