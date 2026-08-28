@@ -6,6 +6,7 @@ import BeforeAfter from "./pages/hero/BeforeAfter";
 import MeetBlogtech from "./pages/hero/MeetBlogtech";
 import PlatformBanner from "./pages/hero/PlatformBanner";
 import Module from "./pages/hero/Module";
+import Software from "./pages/hero/Software";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
       <MeetBlogtech />
       <PlatformBanner />
       <Module />
+      <Software />
     </>
   );
 };

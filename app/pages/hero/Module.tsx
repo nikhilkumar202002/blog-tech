@@ -1,15 +1,15 @@
 import {
-  FiBarChart2,
-  FiCreditCard,
-  FiGrid,
-  FiLayers,
-  FiPackage,
-  FiSmartphone,
-  FiShoppingCart,
-  FiTruck,
-  FiUsers,
-  FiTag,
-} from "react-icons/fi";
+  BsBarChartLine,
+  BsBuilding,
+  BsCalculator,
+  BsCartCheck,
+  BsGem,
+  BsBoxes,
+  BsPhone,
+  BsPersonVcard,
+  BsReceipt,
+  BsUpcScan,
+} from "react-icons/bs";
 
 type ModuleItem = {
   icon: React.ComponentType<{ className?: string }>;
@@ -19,52 +19,52 @@ type ModuleItem = {
 
 const modules: ModuleItem[] = [
   {
-    icon: FiPackage,
+    icon: BsBoxes,
     title: "Inventory Management",
     description: "Know your stock, movement, valuation and availability with greater accuracy.",
   },
   {
-    icon: FiCreditCard,
+    icon: BsReceipt,
     title: "POS & Jewellery Billing",
     description: "Create faster, smarter and more accurate jewellery bills with transaction control.",
   },
   {
-    icon: FiShoppingCart,
+    icon: BsCartCheck,
     title: "Purchase Management",
     description: "Manage suppliers, purchases, receipts and cost flow from one centralized system.",
   },
   {
-    icon: FiUsers,
+    icon: BsPersonVcard,
     title: "Customer Management",
     description: "Build stronger customer relationships with complete purchase history and insights.",
   },
   {
-    icon: FiGrid,
+    icon: BsCalculator,
     title: "Accounting",
     description: "Keep your financial operations organized with integrated accounting and reporting.",
   },
   {
-    icon: FiLayers,
+    icon: BsGem,
     title: "Gold Scheme",
     description: "Manage customer schemes, collections, maturity and transactions with ease.",
   },
   {
-    icon: FiTruck,
+    icon: BsBuilding,
     title: "Branch Management",
     description: "Connect multiple branches and gain centralized visibility into your entire business.",
   },
   {
-    icon: FiBarChart2,
+    icon: BsBarChartLine,
     title: "Reports & Analytics",
     description: "Turn your business data into meaningful insights for faster, better decisions.",
   },
   {
-    icon: FiTag,
+    icon: BsUpcScan,
     title: "Barcode & Tagging",
     description: "Simplify product identification, tracking and movement across your jewellery inventory.",
   },
   {
-    icon: FiSmartphone,
+    icon: BsPhone,
     title: "Mobile Access",
     description: "Stay connected to your business wherever you are.",
   },
@@ -99,7 +99,7 @@ const Module = () => {
                 className="flex flex-col items-center rounded-[24px] border border-[#EAEAEA] bg-white px-7 py-10 text-center shadow-[0_12px_28px_rgba(17,17,17,0.04)] transition-transform duration-200 hover:-translate-y-1"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#F5B61C] text-white shadow-[0_10px_20px_rgba(245,182,28,0.24)]">
-                  <Icon className="text-[24px]" aria-hidden="true" />
+                  <Icon className="text-[22px]" aria-hidden="true" />
                 </div>
 
                 <h3 className="mt-3 text-[20px] font-semibold leading-tight tracking-[-0.04em] text-[#111111]">
