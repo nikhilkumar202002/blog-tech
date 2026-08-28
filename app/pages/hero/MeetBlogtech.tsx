@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
+import { BsPatchCheckFill } from "react-icons/bs";
+import { FiArrowRight } from "react-icons/fi";
 import heroDevices from "../../assets/ui/laptop-tab-mobile-mockups.png";
 
 type Benefit = {
@@ -55,11 +56,11 @@ const MeetBlogtech = () => {
               Meet Blogtec ERP
             </p>
 
-            <h2 className="mt-1 max-w-none text-[34px] font-semibold leading-[1.02] tracking-[-0.06em] text-[#111111] sm:text-[44px] lg:text-[48px]">
+            <h2 className="mt-1 max-w-none text-[34px] font-semibold leading-[1.2] tracking-[-0.03em] text-[#111111] sm:text-[44px] lg:text-[48px]">
               Everything Your Jewellery Business Needs. Connected.
             </h2>
 
-            <p className="mt-5 max-w-none text-[15px] leading-7 text-[#4D4D4D] sm:text-[16px]">
+            <p className="mt-5 max-w-none text-[17px] leading-6 text-[#4D4D4D] sm:text-[16px]">
               Blogtec is a jewellery-focused ERP platform designed to bring your
               daily operations, people and data into one connected ecosystem.
               Instead of switching between disconnected systems, your team gets
@@ -78,19 +79,22 @@ const MeetBlogtech = () => {
             </div>
 
             <div className="mt-9">
-              <h3 className="text-[17px] font-semibold tracking-[-0.04em] text-[#111111]">
+              <h3 className="text-[22px] font-semibold tracking-[-0.04em] text-[#111111]">
                 Product Benefits
               </h3>
 
               <div className="mt-4 grid gap-x-8 gap-y-5 sm:grid-cols-2">
                 {benefits.map((benefit) => (
                   <div key={benefit.title} className="flex gap-3">
-                    <FiCheckCircle className="mt-0.5 shrink-0 text-[18px] text-[#F7B52C]" aria-hidden="true" />
+                    <BsPatchCheckFill
+                      className="mt-0.5 shrink-0 text-[18px] text-[#22C55E]"
+                      aria-hidden="true"
+                    />
                     <div>
-                      <h4 className="text-[15px] font-semibold leading-tight text-[#111111]">
+                      <h4 className="text-[18px] font-semibold leading-tight text-[#111111]">
                         {benefit.title}
                       </h4>
-                      <p className="mt-1 max-w-[220px] text-[13px] leading-5 text-[#5C5C5C]">
+                      <p className="mt-1 max-w-[220px] text-[16px] leading-5 text-[#5C5C5C]">
                         {benefit.description}
                       </p>
                     </div>
