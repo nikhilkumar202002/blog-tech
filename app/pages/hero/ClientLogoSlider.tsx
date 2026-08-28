@@ -1,14 +1,9 @@
 import Image, { StaticImageData } from "next/image";
 import akkara from "../../assets/client-logos/Akkara.jpeg";
 import arhan from "../../assets/client-logos/Arhan.png";
-import athira from "../../assets/client-logos/Athira.png";
 import bright from "../../assets/client-logos/Bright.jpg";
 import chungath from "../../assets/client-logos/Chungath.jpg";
-import elista from "../../assets/client-logos/Elista.png";
-import enjay from "../../assets/client-logos/Enjay.jpeg";
 import kairali from "../../assets/client-logos/Kairali.png";
-import kavitha from "../../assets/client-logos/Kavitha Jewellery.jpg";
-import lenkara from "../../assets/client-logos/Lenkara.png";
 import queens from "../../assets/client-logos/Queens.jpg";
 import zayraa from "../../assets/client-logos/Zayraa.jpg";
 
@@ -21,45 +16,36 @@ const clientLogos: ClientLogo[] = [
   { src: zayraa, alt: "Zayraa Gold & Diamonds" },
   { src: akkara, alt: "Akkara Jewellery" },
   { src: arhan, alt: "Arhan Jewellery" },
-  { src: athira, alt: "Athira Jewellery" },
   { src: bright, alt: "Bright Jewellery" },
   { src: chungath, alt: "Chungath Jewellery" },
-  { src: elista, alt: "Elista Jewellery" },
-  { src: enjay, alt: "Enjay Jewellery" },
   { src: kairali, alt: "Kairali Jewellery" },
-  { src: kavitha, alt: "Kavitha Jewellery" },
-  { src: lenkara, alt: "Lenkara Jewellery" },
   { src: queens, alt: "Queens Jewellery" },
 ];
 
 const ClientLogoSlider = () => {
   return (
-    <section className="py-14 sm:py-16 lg:py-20">
+    <section className=" bg-white pt-10 sm:pt-12">
       <div className="container">
-        <div className="mx-auto max-w-[980px] text-center">
-     
-          <h2 className="mt-4 text-[14px] font-medium leading-tight tracking-[-0.04em] text-[#787878] sm:text-[18px] lg:text-[18px]">
+        <div className="mx-auto max-w-[1040px] text-center">
+          <h2 className="text-[14px] font-medium leading-tight tracking-[-0.03em] text-[#787878] sm:text-[16px] lg:text-[17px]">
             Trusted by Businesses That Build Their Success on Precision.
           </h2>
         </div>
 
-        <div className="mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
-          <div className="logo-marquee-track flex w-[200%] items-stretch">
+        <div className="mt-3 overflow-hidden rounded-[28px] bg-white px-2 py-3 sm:mt-3 sm:px-4 sm:py-4 [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+          <div className="logo-marquee-track flex w-max items-center gap-10 sm:gap-14 lg:gap-16">
             {[clientLogos, clientLogos].map((logoGroup, groupIndex) => (
-              <div
-                key={groupIndex}
-                className="grid w-1/2 grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 lg:grid-cols-6"
-              >
+              <div key={groupIndex} className="flex items-center gap-10 sm:gap-14 lg:gap-16">
                 {logoGroup.map((logo, index) => (
                   <div
                     key={`${logo.alt}-${groupIndex}-${index}`}
-                    className="flex items-center justify-center"
+                    className="flex min-h-[64px] min-w-[120px] items-center justify-center sm:min-h-[76px] sm:min-w-[138px] lg:min-w-[150px]"
                   >
                     <Image
                       src={logo.src}
                       alt={logo.alt}
-                      className="h-14 w-auto max-w-full object-contain sm:h-16 lg:h-[72px]"
-                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                      className="h-10 w-auto max-w-full object-contain sm:h-12 lg:h-14"
+                      sizes="(max-width: 640px) 120px, (max-width: 1024px) 140px, 150px"
                     />
                   </div>
                 ))}
