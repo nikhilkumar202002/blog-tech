@@ -144,11 +144,11 @@ const BeforeAfter = () => {
     <section className="bg-white py-16 sm:py-20 lg:py-24">
       <div className="container">
         <div className="mx-auto max-w-[880px] text-center">
-          <p className="text-[13px] font-medium uppercase tracking-[0.12em] text-[#B35B12] sm:text-[14px]">
+          <p className="bg-gradient-to-r from-[#A44C03] via-[#C96A11] to-[#D39504] bg-clip-text text-[13px] font-medium uppercase tracking-[0.05em] text-transparent sm:text-[16px]">
             A smarter way to operate
           </p>
 
-          <h2 className="mx-auto mt-2 max-w-[700px] text-[28px] font-semibold leading-[1.04] tracking-[-0.06em] text-[#111111] sm:text-[34px] lg:text-[42px]">
+          <h2 className="mx-auto mt-1 max-w-[700px] text-[28px] font-semibold leading-[1.16] tracking-[-0.06em] text-[#111111] sm:text-[34px] lg:text-[42px]">
             From Operational Complexity to Business Clarity.
           </h2>
         </div>

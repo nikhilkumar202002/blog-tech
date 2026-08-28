@@ -49,7 +49,7 @@ const JewelleryBusiness = () => {
   const [openItem, setOpenItem] = useState(accordionItems[0].id);
 
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
+    <section className="bg-white pt-16 sm:pt-20 lg:pt-24">
       <div className="container">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="w-full">
