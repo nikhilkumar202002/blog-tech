@@ -3,6 +3,7 @@ import ClientLogoSlider from "./pages/hero/ClientLogoSlider";
 // import AboutTimeline from "./pages/hero/AboutTimeline";
 import JewelleryBusiness from "./pages/hero/JewelleryBusiness";
 import BeforeAfter from "./pages/hero/BeforeAfter";
+import MeetBlogtech from "./pages/hero/MeetBlogtech";
 
 const Page = () => {
   return (
@@ -12,6 +13,7 @@ const Page = () => {
     {/* <AboutTimeline /> */}
       <JewelleryBusiness />
       <BeforeAfter />
+      <MeetBlogtech />
     </>
   );
 };

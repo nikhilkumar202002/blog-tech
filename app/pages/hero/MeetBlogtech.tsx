@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
-import heroDevices from "../../assets/ui/hero-ui-screen-web.png";
+import heroDevices from "../../assets/ui/laptop-tab-mobile-mockups.png";
 
 type Benefit = {
   title: string;
