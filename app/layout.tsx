@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
+import "@radix-ui/themes/styles.css";
 import "./globals.css";
 
 const dmSans = DM_Sans({

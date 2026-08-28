@@ -83,7 +83,7 @@ const Module = () => {
             Every Operation, One Intelligent System.
           </h2>
 
-          <p className="mx-auto mt-3 max-w-[680px] text-[14px] leading-6 text-[#5B5B5B] sm:text-[15px] sm:leading-7">
+          <p className="mx-auto mt-1 max-w-[680px] text-[14px] leading-6 text-[#5B5B5B] sm:text-[17px] sm:leading-6">
             From the first purchase to the final sale, Blogtec connects the
             critical operations that keep your jewellery business moving.
           </p>
@@ -96,7 +96,7 @@ const Module = () => {
             return (
               <article
                 key={module.title}
-                className="flex min-h-[210px] flex-col items-center rounded-[24px] border border-[#EAEAEA] bg-white px-5 py-7 text-center shadow-[0_12px_28px_rgba(17,17,17,0.04)] transition-transform duration-200 hover:-translate-y-1"
+                className="flex flex-col items-center rounded-[24px] border border-[#EAEAEA] bg-white px-7 py-10 text-center shadow-[0_12px_28px_rgba(17,17,17,0.04)] transition-transform duration-200 hover:-translate-y-1"
               >
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#F5B61C] text-white shadow-[0_10px_20px_rgba(245,182,28,0.24)]">
                   <Icon className="text-[24px]" aria-hidden="true" />
@@ -106,7 +106,7 @@ const Module = () => {
                   {module.title}
                 </h3>
 
-                <p className="mt-3 max-w-[210px] text-[16px] leading-5 text-[#5C5C5C]">
+                <p className="mt-3  text-[16px] leading-5 text-[#5C5C5C]">
                   {module.description}
                 </p>
               </article>
@@ -117,7 +117,7 @@ const Module = () => {
         <div className="mt-12 flex justify-center">
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full bg-[#BA5A00] px-6 py-3 text-[14px] font-medium text-white shadow-[0_14px_28px_rgba(186,90,0,0.18)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#a94f00]"
+            className="inline-flex items-center justify-center rounded-full border-0 bg-[linear-gradient(90deg,#A44C03_0%,#EA6C03_100%)] px-6 py-3 text-[14px] font-medium text-white shadow-[0_14px_28px_rgba(164,76,3,0.22)] transition-transform duration-200 hover:-translate-y-0.5 hover:opacity-95"
           >
             Explore All Modules
           </button>
