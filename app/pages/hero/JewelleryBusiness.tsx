@@ -119,7 +119,7 @@ const JewelleryBusiness = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 -z-10 rounded-[30px] bg-gradient-to-br from-[#f5e0ac] via-[#f9edc9] to-[#fffdf7] shadow-[0_20px_50px_rgba(178,135,33,0.12)]" />
+           
 
             <div className="relative overflow-hidden rounded-[30px] p-4 sm:p-5">
               <div className="relative aspect-[4/4.7] overflow-hidden rounded-[22px] bg-[#fffdf8]">
