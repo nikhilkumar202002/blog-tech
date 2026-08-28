@@ -7,6 +7,7 @@ import MeetBlogtech from "./pages/hero/MeetBlogtech";
 import PlatformBanner from "./pages/hero/PlatformBanner";
 import Module from "./pages/hero/Module";
 import Software from "./pages/hero/Software";
+import Industry from "./pages/hero/Industry";
 
 const Page = () => {
   return (
@@ -20,6 +21,7 @@ const Page = () => {
       <PlatformBanner />
       <Module />
       <Software />
+      <Industry />
     </>
   );
 };
