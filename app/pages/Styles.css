@@ -7,9 +7,9 @@
   }
 
   .hero-screen-image {
+    inset: 10px !important;
     object-fit: contain !important;
     object-position: center top !important;
     transform: none !important;
-    inset: 0 !important;
   }
 }

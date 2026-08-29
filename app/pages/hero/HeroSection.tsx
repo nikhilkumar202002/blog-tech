@@ -107,7 +107,7 @@ const HeroSection = () => {
           <div className="grid w-full gap-6 max-sm:-mx-5 max-sm:w-[calc(100%+40px)] sm:mx-0 lg:grid-cols-[7fr_3fr] lg:items-end">
             <motion.div
               variants={fadeUp}
-              className="hero-screen-frame relative h-[300px] overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
+              className="hero-screen-frame relative aspect-[16/12] overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:aspect-auto sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
               style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
               <Image
@@ -123,7 +123,7 @@ const HeroSection = () => {
             <div className="flex items-stretch">
               <motion.div
                 variants={fadeUp}
-                className="hero-screen-frame relative h-[300px] w-full overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
+                className="hero-screen-frame relative aspect-[16/12] w-full overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:aspect-auto sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
                 style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
               >
                 <Image
