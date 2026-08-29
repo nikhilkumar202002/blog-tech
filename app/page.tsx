@@ -8,6 +8,7 @@ import PlatformBanner from "./pages/hero/PlatformBanner";
 import Module from "./pages/hero/Module";
 import Software from "./pages/hero/Software";
 import Industry from "./pages/hero/Industry";
+import MeetCEO from "./pages/hero/MeetCEO";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
       <JewelleryBusiness />
       <BeforeAfter />
       <MeetBlogtech />
+      <MeetCEO />
       <PlatformBanner />
       <Module />
       <Software />

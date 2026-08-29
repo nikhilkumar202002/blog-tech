@@ -56,24 +56,24 @@ const Software = () => {
               Simpler Operations. Better Control. More Informed Decisions.
             </h2>
 
-            <p className="mt-5 max-w-[520px] text-[15px] leading-7 text-[#4F4F4F] sm:text-[16px]">
+            <p className="mt-5 max-w-[680px] text-[15px] leading-7 text-[#4F4F4F] sm:text-[17px]">
               The purpose of good software isn&apos;t to add complexity. It&apos;s to
               simplify the way your business operates.
             </p>
 
-            <p className="mt-4 max-w-[530px] text-[15px] leading-7 text-[#4F4F4F] sm:text-[16px]">
+            <p className="mt-4 max-w-[680px] text-[15px] leading-7 text-[#4F4F4F] sm:text-[17px]">
               Blogtec solutions are designed to help jewellery businesses
               streamline daily operations, improve access to information, reduce
               manual effort and maintain better control over their processes.
             </p>
           </div>
 
-          <div className="relative mx-auto w-full max-w-[560px] lg:mx-0 lg:justify-self-end">
+          <div className="relative mx-auto w-full max-w-[100%] lg:mx-0 lg:justify-self-end">
             <Image
               src={threeMobiles}
               alt="Three Blogtec mobile app screens"
               className="h-auto w-full"
-              sizes="(max-width: 1024px) 100vw, 560px"
+              sizes="(max-width: 100%) 100vw, 560px"
               priority
             />
           </div>
