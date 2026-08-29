@@ -7,8 +7,9 @@ import MeetBlogtech from "./pages/hero/MeetBlogtech";
 import PlatformBanner from "./pages/hero/PlatformBanner";
 import Module from "./pages/hero/Module";
 import Software from "./pages/hero/Software";
-import Industry from "./pages/hero/Industry";
+// import Industry from "./pages/hero/Industry";
 import MeetCEO from "./pages/hero/MeetCEO";
+import Steps from "./pages/hero/Steps";
 
 const Page = () => {
   return (
@@ -19,11 +20,13 @@ const Page = () => {
       <JewelleryBusiness />
       <BeforeAfter />
       <MeetBlogtech />
-      <MeetCEO />
       <PlatformBanner />
       <Module />
       <Software />
-      <Industry />
+      {/* <Industry /> */}
+      <MeetCEO />
+      <Steps />
+
     </>
   );
 };

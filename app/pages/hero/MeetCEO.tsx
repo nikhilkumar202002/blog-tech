@@ -66,7 +66,7 @@ const MeetCEO = () => {
               </div>
             </div>
 
-            <blockquote className="max-w-[520px] text-[28px] font-semibold leading-15 tracking-[-0.05em] text-[#C86408] sm:text-[55px] pb-[100px]">
+            <blockquote className="max-w-[520px] bg-gradient-to-r from-[#A44C03] via-[#C86408] to-[#E09B2D] bg-clip-text text-[28px] font-semibold leading-15 tracking-[-0.05em] text-transparent sm:text-[55px] pb-[100px]">
               &ldquo;Technology Built Around the Jewellery Business.&rdquo;
             </blockquote>
           </div>
