@@ -4,6 +4,7 @@ import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
+import "./pages/Styles.css";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],

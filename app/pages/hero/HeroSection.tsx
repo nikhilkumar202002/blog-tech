@@ -34,7 +34,7 @@ const mediaGroup = {
   visible: {
     transition: {
       staggerChildren: 0.16,
-      delayChildren: 0.1,
+      delayChildren: 0.95,
     },
   },
 };
@@ -44,7 +44,7 @@ const HeroSection = () => {
     <motion.section
       initial="hidden"
       animate="visible"
-      className="relative overflow-hidden bg-[#F6F6F6] lg:h-[1020px]"
+      className="relative min-h-[100svh] overflow-hidden bg-[#F6F6F6] lg:h-[1020px] lg:min-h-0"
     >
       <div className="container relative flex h-full flex-col pb-8 pt-[150px] lg:pb-0 lg:pt-[200px]">
         <motion.div
@@ -53,14 +53,14 @@ const HeroSection = () => {
         >
           <motion.p
             variants={fadeUp}
-            className="bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]"
+            className="hero-kicker bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]"
           >
             Technology built around the jewellery business
           </motion.p>
 
           <motion.h1
             variants={fadeUp}
-            className="max-w-[980px] text-[45px] font-semibold leading-[1.2] tracking-[-0.04em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]"
+            className="hero-title max-w-[980px] text-[45px] font-semibold leading-[1.2] tracking-[-0.04em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]"
           >
             Run Your Jewellery Business Smarter.
             <span className="block">From One Connected Platform.</span>
@@ -68,7 +68,7 @@ const HeroSection = () => {
 
           <motion.p
             variants={fadeUp}
-            className="mt-1 max-w-[760px] text-[14px] leading-7 text-[#313131] sm:text-[18px] sm:leading-6"
+            className="hero-description mt-1 max-w-[760px] text-[14px] leading-7 text-[#313131] sm:text-[18px] sm:leading-6"
           >
             Manage inventory, billing, sales, accounting, schemes and business
             reporting in one organized platform built around the needs of
@@ -104,17 +104,17 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div variants={mediaGroup} className="mt-12 flex flex-1 items-end">
-          <div className="grid w-full gap-6 lg:grid-cols-[7fr_3fr] lg:items-end">
+          <div className="grid w-full gap-6 max-sm:-mx-5 max-sm:w-[calc(100%+40px)] sm:mx-0 lg:grid-cols-[7fr_3fr] lg:items-end">
             <motion.div
               variants={fadeUp}
-              className="relative h-[340px] overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
+              className="hero-screen-frame relative h-[300px] overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
               style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
               <Image
                 src={desktopShot}
                 alt="Desktop dashboard preview for the jewellery ERP platform"
                 fill
-                className="object-cover object-top pt-[20px] px-[20px]"
+                className="hero-screen-image object-cover object-top sm:pt-[20px] sm:px-[20px]"
                 priority
                 sizes="(max-width: 1024px) 100vw, 68vw"
               />
@@ -123,14 +123,14 @@ const HeroSection = () => {
             <div className="flex items-stretch">
               <motion.div
                 variants={fadeUp}
-                className="relative h-[340px] w-full overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
+                className="hero-screen-frame relative h-[300px] w-full overflow-hidden rounded-t-[42px] rounded-b-none px-0 pt-0 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 sm:rounded-t-[50px] lg:h-[520px] lg:px-6 lg:pt-6"
                 style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
               >
                 <Image
                   src={mobileShot}
                   alt="Mobile sales report preview for the jewellery ERP platform"
                   fill
-                  className="object-cover object-top pt-[20px] px-[20px]"
+                  className="hero-screen-image object-cover object-top sm:pt-[20px] sm:px-[20px]"
                   priority
                   sizes="(max-width: 1024px) 100vw, 28vw"
                 />

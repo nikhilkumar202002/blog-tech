@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .hero-screen-frame {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0 !important;
+  }
+
+  .hero-screen-image {
+    object-fit: contain !important;
+    object-position: center top !important;
+    transform: none !important;
+    inset: 0 !important;
+  }
+}
