@@ -1,54 +1,112 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 import { FiArrowRight, FiPlay } from "react-icons/fi";
 import desktopShot from "../../assets/ui/hero-ui-screen-web.png";
 import mobileShot from "../../assets/ui/hero-ui-screen-mobile.png";
 import texture from "../../assets/background/brown-texture.jpg";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const staggerGroup = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const mediaGroup = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.16,
+      delayChildren: 0.1,
+    },
+  },
+};
+
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-[#F6F6F6] lg:h-[1020px]">
+    <motion.section
+      initial="hidden"
+      animate="visible"
+      className="relative overflow-hidden bg-[#F6F6F6] lg:h-[1020px]"
+    >
       <div className="container relative flex h-full flex-col pb-8 pt-[150px] lg:pb-0 lg:pt-[200px]">
-        <div className="mx-auto flex max-w-[980px] flex-col items-center text-center">
-          <p className="bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]">
+        <motion.div
+          variants={staggerGroup}
+          className="mx-auto flex max-w-[980px] flex-col items-center text-center"
+        >
+          <motion.p
+            variants={fadeUp}
+            className="bg-gradient-to-r from-[#A44C03] to-[#D39504] bg-clip-text text-[16px] font-semibold uppercase text-transparent sm:text-[16px]"
+          >
             Technology built around the jewellery business
-          </p>
+          </motion.p>
 
-          <h1 className="max-w-[980px] text-[45px] font-semibold leading-[1.2] tracking-[-0.04em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]">
+          <motion.h1
+            variants={fadeUp}
+            className="max-w-[980px] text-[45px] font-semibold leading-[1.2] tracking-[-0.04em] text-[#111111] sm:text-[45px] md:text-[50px] lg:text-[55px]"
+          >
             Run Your Jewellery Business Smarter.
             <span className="block">From One Connected Platform.</span>
-          </h1>
+          </motion.h1>
 
-          <p className="mt-1 max-w-[760px] text-[14px] leading-7 text-[#313131] sm:text-[18px] sm:leading-6">
+          <motion.p
+            variants={fadeUp}
+            className="mt-1 max-w-[760px] text-[14px] leading-7 text-[#313131] sm:text-[18px] sm:leading-6"
+          >
             Manage inventory, billing, sales, accounting, schemes and business
             reporting in one organized platform built around the needs of
             jewellery businesses.
-          </p>
+          </motion.p>
 
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row">
-            <Link
-              href="#"
-              className="inline-flex items-center gap-3 rounded-full bg-[#12264f] px-6 py-3.5 text-[15px] font-medium text-white shadow-[0_16px_30px_rgba(18,38,79,0.18)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#0d1d3b]"
-            >
-              <span>Book a Free Demo</span>
-              <FiArrowRight className="text-[18px]" aria-hidden="true" />
-            </Link>
+          <motion.div
+            variants={staggerGroup}
+            className="mt-8 flex flex-col items-center gap-4 sm:flex-row"
+          >
+            <motion.div variants={fadeUp}>
+              <Link
+                href="#"
+                className="inline-flex items-center gap-3 rounded-full bg-[#12264f] px-6 py-3.5 text-[15px] font-medium text-white shadow-[0_16px_30px_rgba(18,38,79,0.18)] transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#0d1d3b]"
+              >
+                <span>Book a Free Demo</span>
+                <FiArrowRight className="text-[18px]" aria-hidden="true" />
+              </Link>
+            </motion.div>
 
-            <Link
-              href="#"
-              className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-[15px] font-medium text-[#101010] shadow-[0_16px_30px_rgba(17,17,17,0.08)] ring-1 ring-black/5 transition-transform duration-200 hover:-translate-y-0.5"
-            >
-              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#f7b52c] text-white">
-                <FiPlay className="ml-0.5 text-[12px]" aria-hidden="true" />
-              </span>
-              <span>Explore Jewellery ERP</span>
-            </Link>
-          </div>
-        </div>
+            <motion.div variants={fadeUp}>
+              <Link
+                href="#"
+                className="inline-flex items-center gap-3 rounded-full bg-white px-6 py-3.5 text-[15px] font-medium text-[#101010] shadow-[0_16px_30px_rgba(17,17,17,0.08)] ring-1 ring-black/5 transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#f7b52c] text-white">
+                  <FiPlay className="ml-0.5 text-[12px]" aria-hidden="true" />
+                </span>
+                <span>Explore Jewellery ERP</span>
+              </Link>
+            </motion.div>
+          </motion.div>
+        </motion.div>
 
-        <div className="mt-12 flex flex-1 items-end">
+        <motion.div variants={mediaGroup} className="mt-12 flex flex-1 items-end">
           <div className="grid w-full gap-6 lg:grid-cols-[7fr_3fr] lg:items-end">
-            <div
+            <motion.div
+              variants={fadeUp}
               className="relative h-[340px] overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
               style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
             >
@@ -60,10 +118,11 @@ const HeroSection = () => {
                 priority
                 sizes="(max-width: 1024px) 100vw, 68vw"
               />
-            </div>
+            </motion.div>
 
             <div className="flex items-stretch">
-              <div
+              <motion.div
+                variants={fadeUp}
                 className="relative h-[340px] w-full overflow-hidden rounded-t-[50px] rounded-b-none px-4 pt-4 shadow-[0_24px_60px_rgba(0,0,0,0.08)] sm:h-[420px] sm:px-5 sm:pt-5 lg:h-[520px] lg:px-6 lg:pt-6"
                 style={{ backgroundImage: `url(${texture.src})`, backgroundSize: "cover", backgroundPosition: "center" }}
               >
@@ -75,12 +134,12 @@ const HeroSection = () => {
                   priority
                   sizes="(max-width: 1024px) 100vw, 28vw"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
