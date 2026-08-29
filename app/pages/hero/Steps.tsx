@@ -35,7 +35,7 @@ const steps: Step[] = [
 
 const Steps = () => {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
+    <section className="bg-white pb-16 sm:pb-20 lg:pb-24">
       <div className="container">
         <div className="mx-auto max-w-[720px] text-center">
           <p className="text-[14px] font-medium uppercase tracking-[0.02em] text-[#B65A0F] sm:text-[18px]">

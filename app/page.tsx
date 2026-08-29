@@ -10,6 +10,7 @@ import Software from "./pages/hero/Software";
 // import Industry from "./pages/hero/Industry";
 import MeetCEO from "./pages/hero/MeetCEO";
 import Steps from "./pages/hero/Steps";
+import FaQ from "./pages/hero/FaQ";
 
 const Page = () => {
   return (
@@ -26,6 +27,7 @@ const Page = () => {
       {/* <Industry /> */}
       <MeetCEO />
       <Steps />
+      <FaQ />
 
     </>
   );
